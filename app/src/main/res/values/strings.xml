@@ -13,4 +13,6 @@
     <string name="submit">Submit</string>
     <string name="search">Search</string>
     <string name="this_is_a_sample_of_really_large_text">This is a Sample of Really Large Text</string>
+    <string name="current_day_of_month">Current Day of Month:</string>
+    <string name="_22">22</string>
 </resources>

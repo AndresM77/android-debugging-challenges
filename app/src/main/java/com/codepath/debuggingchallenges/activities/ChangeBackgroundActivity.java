@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import com.codepath.debuggingchallenges.R;
 
@@ -15,9 +16,11 @@ public class ChangeBackgroundActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_background);
+
     }
 
     public void onGoClick(View view) {
+        Toast.makeText(this, "I got here", Toast.LENGTH_LONG).show();
         View mainView = findViewById(android.R.id.content);
         mainView.setBackgroundColor(getNextColor());
     }
