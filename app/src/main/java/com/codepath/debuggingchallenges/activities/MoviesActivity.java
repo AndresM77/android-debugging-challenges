@@ -3,6 +3,7 @@ package com.codepath.debuggingchallenges.activities;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.codepath.debuggingchallenges.R;
 import com.codepath.debuggingchallenges.adapters.MoviesAdapter;
@@ -43,6 +44,7 @@ public class MoviesActivity extends AppCompatActivity {
 
 
     private void fetchMovies() {
+        Log.d("MYAPP", "I got here");
         String url = " https://api.themoviedb.org/3/movie/now_playing?api_key=";
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(url, null, new JsonHttpResponseHandler() {
